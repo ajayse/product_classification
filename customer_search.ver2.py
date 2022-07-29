@@ -20,7 +20,7 @@ def fix_name(name):
   '''
   name_list = list()
   for n in str.lower(name).split(' '):
-    if n not in name_list:
+    if n not in name_list and n!='':
       name_list.append(n)
   return ' '.join(name_list).strip()
 
